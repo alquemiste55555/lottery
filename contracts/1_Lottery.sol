@@ -3,6 +3,7 @@
 pragma solidity ^0.8.11;
 
 contract Lottery {
+
     address public owner;
     address payable [] public players;
     uint public lotteryId;
@@ -46,4 +47,5 @@ contract Lottery {
         require(msg.sender == owner);
         _;
     }
+    
 }
